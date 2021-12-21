@@ -17,7 +17,7 @@ const letMath = {
   '-': (a, b) => { return a - b },
   '*': (a, b) => { return a * b },
   '/': (a, b) => {
-    if (b === '0') {
+    if (b == 0) {
       return 'Can`t divide to 0'
     } else {
       return a / b
