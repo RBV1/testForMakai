@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <script src="./app.js" type="module"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lets calculate!</h1>
+      <form class="input_form" id="form">
+        <div class="form-group">
+            <label for="number1">Write first number:</label>
+            <input 
+                type="number" 
+                class="input_number" 
+                name="number1" 
+                id="numberOne"
+                placeholder="Enter any number"
+                minlength="1"
+                maxlength="10"
+                pattern="\d+"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="operator">Choose your math:</label>
+            <select id="math" name="operator">
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="-">-</option>
+                <option value="+">+</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="number2">Write second number:</label>
+            <input 
+                type="number" 
+                class="input_number" 
+                name="number2" 
+                id="numberTwo"
+                placeholder="Enter any number"
+                minlength="1"
+                maxlength="10"
+                pattern="\d+"
+                required>
+        </div>
+        <button type="submit" class="submit_btn" id="submit">Submit</button>
+      </form>
+      <div class="answer" id="answer">
+        <h2>And your result is:</h2>
+        <span id="result"></span>
+    </div>
+  </body>
+</html>

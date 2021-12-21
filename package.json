@@ -1,0 +1,27 @@
+{
+    "name": "node-ex-website",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.1",
+        "cors": "^2.8.5",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "axios": "^0.24.0",
+        "eslint": "^7.32.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.2.0",
+        "parcel-bundler": "^1.12.5",
+        "qs": "^6.10.2",
+        "querystring": "^0.2.1"
+    }
+}
